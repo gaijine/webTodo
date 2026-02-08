@@ -9,5 +9,10 @@ type Task struct {
 }
 
 type CreateTaskRequest struct {
+	Text string `json:"text"`
+}
+
+type UpdateTaskRequest struct {
+	ID   int
 	Text string
 }
